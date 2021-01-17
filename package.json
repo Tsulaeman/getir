@@ -1,0 +1,14 @@
+{
+  "name": "getir",
+  "version": "1.0.0",
+  "description": "Rest API test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adetunji Oyebanji <tunji.oyebanji2015@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

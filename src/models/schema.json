@@ -1,0 +1,24 @@
+{
+	"_id": {
+		"primaryKey": true,
+		"type": "Object",
+		"required": true
+	},
+	"key": {
+		"type": "string",
+		"required": true
+	},
+	"createdAt": {
+		"type": "Date",
+		"required": true
+	},
+	"counts": {
+		"type": "Array",
+		"required": true
+	},
+	"value": {
+		"key": true,
+		"type": "string",
+		"required": true
+	}
+}

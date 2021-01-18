@@ -6,7 +6,7 @@ NAME="src/index.js"
 RUN=$(pgrep -f $NAME)
 
 if [ "$RUN" == "" ]; then
- npm run staging
+ npm run dev
 else
  echo "Script is running"
 fi

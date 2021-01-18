@@ -10,7 +10,7 @@ workflows:
           application-name: $DEV_APP_NAME
           bundle-bucket: $DEV_S3_BUCKET
           bundle-key: $DEV_S3_BUNDLE_KEY
-          deployment-group: development
+          deployment-group: master
           service-role-arn: $DEV_ARN
           filters:
             branches:

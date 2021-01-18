@@ -1,0 +1,19 @@
+version: 2.1
+
+orbs:
+  aws-code-deploy: circleci/aws-code-deploy@1.0.1
+
+workflows:
+  deploy_to_staging:
+    jobs:
+      - aws-code-deploy/deploy:
+          application-name: $DEV_APP_NAME
+          bundle-bucket: $DEV_S3_BUCKET
+          bundle-key: $DEV_S3_BUNDLE_KEY
+          deployment-group: development
+          service-role-arn: $DEV_ARN
+          filters:
+            branches:
+              only:
+                - master
+
